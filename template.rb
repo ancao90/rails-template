@@ -61,7 +61,7 @@ after_bundle do
   route "root to: 'home#show'"
 
   # Format code base
-  run 'bin/rubocop -A --no-parallel'
+  run 'bin/rubocop -A --no-parallel --format=worst'
 
   git :init
   git add: '.'
